@@ -95,9 +95,42 @@ grow-up-money-server/
 └── src/main/resources/
     └── application.yml         # 환경 설정
 ```
+```
+/Grow-up-money-web/ 
+├── /src                        // 모든 소스 코드가 위치하는 핵심 폴더
+│   ├── components/
+│   │    ├── Add/                      #common에서 합친페이지
+│   │    ├── api/                      #api연결
+│   │    ├── common/
+│   │    │   ├── AdminComponents/             
+│   │    │   ├── Loadmapcomponents/
+│   │    │   ├── Login/
+│   │    │   ├── Logincomponents/
+│   │    │   ├── Loginmaincomponents/
+│   │    │   ├── maincomponents/
+│   │    │   ├── Market/
+│   │    │   ├── mypage/
+│   │    │   ├── plancomponents/
+│   │    │   ├── Serviccenter/
+│   │    │   ├── SignUp/
+│   │    │   ├── Theme/
+│   │    ├── css/                      #css파일모음
+│   │    ├── data/                     #임시 데이터모음
+│   │    ├── styled/                   #스타일드 컴포넌트
+│   ├── img/                   #이미지
+│   ├── error/                 #에러페이지
+│   ├── atoms.ts               #상태관리
+│   └──  router.jsx/           #라우터
+├── /node_modules     #노드 모듈
+├── /env              #서버주소저장
+├── index             
+├── package-lock.json
+├── package.json
+├── README.md
+├── eslint.config
+└── vite.config.js
 
-## 팀 소개 (Team Oh!Yes)
-
+```
 | 이름 | 역할 | 담당 |
 |------|------|------|
 | **문채원** | 총괄 팀장 | 프론트엔드, 프로젝트 관리 |
