@@ -96,51 +96,6 @@ grow-up-money-server/
     └── application.yml         # 환경 설정
 ```
 
-## 🚀 설치 및 실행
-
-### 요구사항
-- Java 21+
-- MySQL 8.0+
-- Redis
-- Gradle
-
-### 1. 레포지토리 클론
-```bash
-git clone https://github.com/Team-Oh-Yes/grow-up-money-server.git
-cd grow-up-money-server
-```
-
-### 2. 환경 설정
-`src/main/resources/application.properties` 파일을 생성하고 다음 내용을 설정합니다:
-```properties
-# Database
-spring.datasource.url=jdbc:mysql://localhost:3306/growupmoney
-spring.datasource.username=your_username
-spring.datasource.password=your_password
-
-# Redis
-spring.data.redis.host=localhost
-spring.data.redis.port=6379
-
-# JWT
-jwt.secret=your_jwt_secret_key
-```
-
-### 3. 빌드 및 실행
-```bash
-# 빌드
-./gradlew clean build -x test
-
-# 실행
-./gradlew bootRun
-```
-
-### 4. API 문서 확인
-서버 실행 후 Swagger UI에서 API 문서를 확인할 수 있습니다:
-```
-http://localhost:8080/swagger-ui.html
-```
-
 ## 👥 팀 소개 (Team Oh!Yes)
 
 | 이름 | 역할 | 담당 |
